@@ -1,3 +1,30 @@
+.box-body-gray{
+    background-color: #f5f5f5;
+}
+
+
+.form-control {
+      -webkit-border-radius: 4px !important;
+         -moz-border-radius: 4px !important;
+              border-radius: 4px !important;
+      -webkit-border-top: 4px !important;
+         -moz-border-top: 4px !important;
+              border-top: 4px !important;
+      -webkit-border-bottom: 4px !important;
+         -moz-border-bottom: 4px !important;
+              border-bottom: 4px !important;
+    }
+
+.panel-white{
+    height: 120px;
+    padding-top: 22px;
+}
+
+.box-body-white{
+    background-color: #fff;
+     border: 1px solid #ccc;
+}
+
 html {
     color: #222;
     font-size: 1em;
