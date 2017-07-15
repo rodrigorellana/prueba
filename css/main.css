@@ -1,29 +1,4 @@
-.box-body-gray{
-    background-color: #f5f5f5;
-}
 
-
-.form-control {
-      -webkit-border-radius: 4px !important;
-         -moz-border-radius: 4px !important;
-              border-radius: 4px !important;
-      -webkit-border-top: 4px !important;
-         -moz-border-top: 4px !important;
-              border-top: 4px !important;
-      -webkit-border-bottom: 4px !important;
-         -moz-border-bottom: 4px !important;
-              border-bottom: 4px !important;
-    }
-
-.panel-white{
-    height: 120px;
-    padding-top: 22px;
-}
-
-.box-body-white{
-    background-color: #fff;
-     border: 1px solid #ccc;
-}
 
 html {
     color: #222;
@@ -82,7 +57,83 @@ textarea {
    ========================================================================== */
 
 
+.box-body-gray{
+    background-color: #f5f5f5;
+}
 
+h1{
+  font-size: 28px;
+   font-family: "roboto condensed";  
+}
+
+.panel-body {
+    padding: 10px !important;
+}
+
+
+.body {
+     font-size: 14px !important;
+}
+
+
+h2{
+
+  font-size: 20px;
+   font-family: "Roboto";  
+}
+h3{
+
+  font-size: 18px;
+   font-family: "Roboto";  
+}
+
+
+.header .icon-logo-banco {
+    font-size: 55px;
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+
+   /* height:10!important; */
+}
+
+.xtest{
+  background: url("../img/logo-sprite.png") no-repeat;
+     background-position: 0 0; 
+    /* width:600px; */
+     height:40px; 
+}
+
+.header{
+    background: #002464;
+    padding-bottom:20px;
+    padding-top:20px;
+    font-family: "robotolight";  
+    /* height:50px !important; */
+}
+
+
+.form-control {
+      -webkit-border-radius: 4px !important;
+         -moz-border-radius: 4px !important;
+              border-radius: 4px !important;
+      -webkit-border-top: 4px !important;
+         -moz-border-top: 4px !important;
+              border-top: 4px !important;
+      -webkit-border-bottom: 4px !important;
+         -moz-border-bottom: 4px !important;
+              border-bottom: 4px !important;
+    }
+
+.panel-white{
+    height: 120px;
+    padding-top: 22px;
+}
+
+.box-body-white{
+    background-color: #fff;
+     border: 1px solid #ccc;
+}
 
 
 
