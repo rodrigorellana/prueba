@@ -7,18 +7,28 @@
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- 
-		<link rel="stylesheet" href="css/normalize.min.css">-->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<script type="text/javascript" src="js/vendor/angular.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+
+	<script type="text/javascript" src="js/vendor/moment.js"></script>
+	<script type="text/javascript" src="js/vendor/dateTimeInput.js"></script>
+	<script type="text/javascript" src="js/vendor/datetimepicker.js"></script>
+	<script type="text/javascript" src="js/vendor/datetimepicker.templates.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/datetimepicker.css">
+
+	
 </head>
 
-<body>
+<body ng-app="mainApp" id="mainApp" ng-controller="mainController">
 	<div class="">
 	
 	</div>
@@ -92,7 +102,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-md-12">
 					<div class="panel panel-default box-body-gray">
@@ -102,33 +111,46 @@
 						</div>
 						<div class="panel-body collapse" id="demo">
 							<div class="row">
-								<div class="col-md-4 ">
-								</div>
-								<div class="col-md-4">
-								</div>
-								<div class="col-md-4 ">
-									<div class="btn-group">
-										<button class="btn btn-default">
-										Seleccione...
-									</button>
-										<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-										<span class="caret"></span>
-									</button>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="#">Creditos</a>
-											</li>
-											<li class="disabled">
-												<a href="#">bonos</a>
-											</li>
-											<li class="divider">
-											</li>
-											<li>
-												<a href="#">algo</a>
-											</li>
+								<div class="col-md-3">
+									  <div class="input-group">
+										<a class="dropdown-toggle" id="dropdownStart" role="button" data-toggle="dropdown" data-target="#"  href="#">
+											<div class="input-group date">
+												<input type="text" class="form-control" placeholder="Seleccione..." data-date-time-input="DD-MM-YYYY" data-ng-model="searchModel.FilterDateFrom">
+												<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+											</div>
+										</a>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<datetimepicker data-ng-model="searchModel.FilterDateFrom"
+															data-datetimepicker-config="{ dropdownSelector: '#dropdownStart', renderOn: 'end-date-changed', minView: 'day' }"></datetimepicker>
 										</ul>
+									</div> 
+								</div>
+								<div class="col-md-3">
+									 <div class="input-group">
+										<a class="dropdown-toggle" id="dropdownEnd" role="button" data-toggle="dropdown" data-target="#" href="#">
+											<div class="input-group date">
+												<input type="text" class="form-control" placeholder="Seleccione..."  data-date-time-input="DD-MM-YYYY" data-ng-model="searchModel.FilterDateTo">
+												<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+											</div>
+										</a>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<datetimepicker data-ng-model="searchModel.FilterDateTo"
+															data-datetimepicker-config="{ dropdownSelector: '#dropdownEnd', renderOn: 'start-date-changed', minView: 'day' }"></datetimepicker>
+										</ul>
+									</div> 
+								</div>
+								<div class="col-md-3">
+									<div class="btn-group">
+										 <select class="form-control" name="size">
+                <option value="">Choose a size</option>
+                <option value="s">Small (S)</option>
+                <option value="m">Medium (M)</option>
+                <option value="l">Large (L)</option>
+                <option value="xl">Extra large (XL)</option>
+            </select>
 									</div>
 								</div>
+									<div class="col-md-3"></div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
@@ -138,13 +160,11 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-
 									<button type="button" class="btn btn-success">
-						Buscar
-					</button>
+										Buscar
+									</button>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
