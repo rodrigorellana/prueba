@@ -8,6 +8,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	
 	<script type="text/javascript" src="js/vendor/angular.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.js"></script>
@@ -29,9 +30,7 @@
 </head>
 
 <body ng-app="mainApp" id="mainApp" ng-controller="mainController">
-	<div class="">
 
-	</div>
 	<div class="header">
 		<div class="container">
 			<div class="row">
@@ -139,13 +138,16 @@
 								</div>
 								<div class="col-md-4">
 									<div class="input-group">
-										<select class="form-control" name="size">
-											<option value="">Choose a size</option>
-											<option value="s">Small (S)</option>
-											<option value="m">Medium (M)</option>
-											<option value="l">Large (L)</option>
-											<option value="xl">Extra large (XL)</option>
-										</select>
+										<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
 									</div>
 								</div>
 

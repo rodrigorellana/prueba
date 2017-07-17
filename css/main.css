@@ -162,7 +162,7 @@ h3{
    Media Queries
    ========================================================================== */
 
-@media  screen and (max-width: 995px) {
+@media  screen and (max-width: 959px) {
      .logoImage
     {
         margin-left: 10px;
@@ -175,7 +175,7 @@ h3{
     {
         width: 30%;
         display: inline-block;
-        
+         /* background: red; */
     }
      .panel-body .row .col-md-6
     {
