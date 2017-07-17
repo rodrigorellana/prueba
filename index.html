@@ -201,87 +201,14 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>
-									1
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									$ 200.00
-								</td>
-							</tr>
-							<tr>
-								<td>
-									1
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									$ 200.00
-								</td>
-							</tr>
-							<tr>
-								<td>
-									1
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									$ 200.00
-								</td>
-							</tr>
-							<tr>
-								<td>
-									1
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									xxxxxxxxxxxxx
-								</td>
-								<td>
-									$ 200.00
-								</td>
-							</tr>
-
+							 <tr ng-repeat="x in testArray">
+								  <td >{{x.col1}}</td>
+								  <td >{{x.col2}}</td>
+								  <td >{{x.col3}}</td>
+								  <td >{{x.col4}}</td>
+								  <td >{{x.col5}}</td>
+								  <td >{{x.col6 | currency:"$":0}}</td>								
+							 </tr>						
 						</tbody>
 					</table>
 
