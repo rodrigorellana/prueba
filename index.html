@@ -25,17 +25,17 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/datetimepicker.css">
 
-	
+
 </head>
 
 <body ng-app="mainApp" id="mainApp" ng-controller="mainController">
 	<div class="">
-	
+
 	</div>
 	<div class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 xtest">
+				<div class="col-md-6 logoImage">
 					<span class="icon-logo-banco"></span>
 				</div>
 				<div class="col-md-6">
@@ -47,8 +47,8 @@
 		</div>
 	</div>
 	<div>
-		<div class="container-fluid">
-		
+		<div class="container">
+
 
 			<div class="row">
 				<div class="col-md-12">
@@ -56,7 +56,7 @@
 						<h1>
 							Titulo
 						</h1>
-						
+
 					</div>
 				</div>
 			</div>
@@ -111,64 +111,64 @@
 						</div>
 						<div class="panel-body collapse" id="demo">
 							<div class="row">
-								<div class="col-md-3">
-									  <div class="input-group">
-										<a class="dropdown-toggle" id="dropdownStart" role="button" data-toggle="dropdown" data-target="#"  href="#">
+								<div class="col-md-4">
+									<div class="input-group">
+										<a class="dropdown-toggle" id="dropdownStart" role="button" data-toggle="dropdown" data-target="#" href="#">
 											<div class="input-group date">
 												<input type="text" class="form-control" placeholder="Seleccione..." data-date-time-input="DD-MM-YYYY" data-ng-model="searchModel.FilterDateFrom">
 												<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 											</div>
 										</a>
 										<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-											<datetimepicker data-ng-model="searchModel.FilterDateFrom"
-															data-datetimepicker-config="{ dropdownSelector: '#dropdownStart', renderOn: 'end-date-changed', minView: 'day' }"></datetimepicker>
+											<datetimepicker data-ng-model="searchModel.FilterDateFrom" data-datetimepicker-config="{ dropdownSelector: '#dropdownStart', renderOn: 'end-date-changed', minView: 'day' }"></datetimepicker>
 										</ul>
-									</div> 
+									</div>
 								</div>
-								<div class="col-md-3">
-									 <div class="input-group">
+								<div class="col-md-4">
+									<div class="input-group">
 										<a class="dropdown-toggle" id="dropdownEnd" role="button" data-toggle="dropdown" data-target="#" href="#">
 											<div class="input-group date">
-												<input type="text" class="form-control" placeholder="Seleccione..."  data-date-time-input="DD-MM-YYYY" data-ng-model="searchModel.FilterDateTo">
+												<input type="text" class="form-control" placeholder="Seleccione..." data-date-time-input="DD-MM-YYYY" data-ng-model="searchModel.FilterDateTo">
 												<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 											</div>
 										</a>
 										<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-											<datetimepicker data-ng-model="searchModel.FilterDateTo"
-															data-datetimepicker-config="{ dropdownSelector: '#dropdownEnd', renderOn: 'start-date-changed', minView: 'day' }"></datetimepicker>
+											<datetimepicker data-ng-model="searchModel.FilterDateTo" data-datetimepicker-config="{ dropdownSelector: '#dropdownEnd', renderOn: 'start-date-changed', minView: 'day' }"></datetimepicker>
 										</ul>
-									</div> 
-								</div>
-								<div class="col-md-3">
-									<div class="btn-group">
-										 <select class="form-control" name="size">
-                <option value="">Choose a size</option>
-                <option value="s">Small (S)</option>
-                <option value="m">Medium (M)</option>
-                <option value="l">Large (L)</option>
-                <option value="xl">Extra large (XL)</option>
-            </select>
 									</div>
 								</div>
-									<div class="col-md-3"></div>
+								<div class="col-md-4">
+									<div class="input-group">
+										<select class="form-control" name="size">
+											<option value="">Choose a size</option>
+											<option value="s">Small (S)</option>
+											<option value="m">Medium (M)</option>
+											<option value="l">Large (L)</option>
+											<option value="xl">Extra large (XL)</option>
+										</select>
+									</div>
+								</div>
+
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="input-group">
-
 										<input type="text" class="form-control" placeholder="Busqueda general...">
 									</div>
 								</div>
 								<div class="col-md-6">
-									<button type="button" class="btn btn-success">
+									<div class="input-group">
+										<button type="button" class="btn btn-success">
 										Buscar
-									</button>
+									</button></div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
+
 
 			<div class="row">
 				<div class="col-md-12">

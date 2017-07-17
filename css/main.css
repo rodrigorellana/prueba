@@ -108,7 +108,7 @@ h3{
    /* height:10!important; */
 }
 
-.xtest{
+.logoImage{
   background: url("../img/logo-sprite.png") no-repeat;
      background-position: 0 0; 
     /* width:600px; */
@@ -162,16 +162,59 @@ h3{
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media  screen and (max-width: 995px) {
+     .logoImage
+    {
+        margin-left: 10px;
+    }
+    .panel-body .row
+    {
+       
+    }
+    .row .col-md-4
+    {
+        width: 30%;
+        display: inline-block;
+        
+    }
+     .panel-body .row .col-md-6
+    {
+        width: 45%;
+       display: inline-block;
+         
+    }
 }
 
+@media  screen and (max-width: 599px) {
+    .panel-body .row
+    {
+       
+    }
+
+    .logoImage
+    {
+        margin-left: 10px;
+    }
+    .panel .panel-white
+    {height: auto;
+        font-size: smaller;
+    }
+    .row .col-md-4
+    {
+      
+         display: block;
+          width: auto;
+       
+    }
+}
+
+/* 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
 
-}
+} */
 
 /* ==========================================================================
    Helper classes
