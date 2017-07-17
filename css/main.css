@@ -148,7 +148,11 @@ h3{
 }
 
 
-
+.btn-sm
+{
+    background: white !important;
+      border: 1px solid #ccc;
+}
 
 
 

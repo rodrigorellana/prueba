@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	
+
 	<script type="text/javascript" src="js/vendor/angular.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.js"></script>
@@ -105,8 +105,15 @@
 				<div class="col-md-12">
 					<div class="panel panel-default box-body-gray">
 						<div class="panel-heading">
-							<h3 class="panel-title">Total Items: X</h3>
-							<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Mas</button>
+							<div class="row">
+								<div class="col-md-6">
+									<h3 class="panel-title">Total Items: X</h3>
+								</div>
+								<div class="col-md-6 text-right">
+									<button type="button" class="btn btn-secondary btn-sm" data-toggle="collapse" data-target="#demo" onclick="javascript:this.innerText = this.innerText === 'Abrir' ? 'Cerrar': 'Abrir';">Abrir</button>
+								</div>
+							</div>
+
 						</div>
 						<div class="panel-body collapse" id="demo">
 							<div class="row">
@@ -138,16 +145,16 @@
 								</div>
 								<div class="col-md-4">
 									<div class="input-group">
-										 <select name="idSearchDate" id="idSearchTypeAdjudicate" ng-model="searchModel.StatusId" class="form-control" style="width: 100% !important;">
-											<option value="1">Publicada</option>
-											<option selected="selected" value="2">Adjudicada</option>
-											<option value="3">Desierta</option>
-											<option value="4">Cerrada</option>
+										<select name="combo" class="form-control" style="width: 100% !important;">
+											<option value="1">Opcion1</option>
+											<option value="2">Opcion2</option>
+											<option value="3">Opcion3</option>
+											<option value="4">Opcion4</option>
 											
-											<option value="-1">Todas</option>
+											<option selected="selected" value="-1">Seleccione...</option>
 										</select>
+									</div>
 								</div>
-
 							</div>
 							<div class="row">
 								<div class="col-md-6">
@@ -162,7 +169,6 @@
 									</button></div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
